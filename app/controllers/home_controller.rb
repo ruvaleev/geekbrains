@@ -1,4 +1,4 @@
 class HomeController < ApplicationController
-  def footer
+  def index
   end
 end
