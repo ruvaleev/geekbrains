@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180128131327) do
+=======
+ActiveRecord::Schema.define(version: 20180119192459) do
+>>>>>>> b5394fb350ce3648f6ec1cedb7705206ce78d7f3
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,12 +22,18 @@ ActiveRecord::Schema.define(version: 20180128131327) do
   create_table "comments", force: :cascade do |t|
     t.text "body"
     t.bigint "user_id"
+<<<<<<< HEAD
     t.boolean "disactive", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "commentable_type"
     t.bigint "commentable_id"
     t.index ["commentable_type", "commentable_id"], name: "index_comments_on_commentable_type_and_commentable_id"
+=======
+    t.boolean "disactive"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> b5394fb350ce3648f6ec1cedb7705206ce78d7f3
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
@@ -34,12 +44,17 @@ ActiveRecord::Schema.define(version: 20180128131327) do
     t.boolean "disactive", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
+=======
+    t.index ["title"], name: "index_posts_on_title", unique: true
+>>>>>>> b5394fb350ce3648f6ec1cedb7705206ce78d7f3
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
+<<<<<<< HEAD
     t.boolean "moderator", default: false
     t.boolean "creator", default: false
     t.boolean "disactive", default: false
@@ -53,6 +68,13 @@ ActiveRecord::Schema.define(version: 20180128131327) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
+=======
+    t.boolean "disactive", default: false
+    t.boolean "moderator", default: false
+    t.boolean "creator", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> b5394fb350ce3648f6ec1cedb7705206ce78d7f3
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["name"], name: "index_users_on_name", unique: true
   end

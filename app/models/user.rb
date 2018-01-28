@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+<<<<<<< HEAD
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :recoverable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -26,4 +27,9 @@ class User < ApplicationRecord
     Rails.logger.info "После удаления пользователя #{@name}"
     Rails.logger.info '#########################################'
   end
+=======
+	validates :name, presence: true
+	validates :name, length: { maximum: 16, minimum: 2 }
+	validates :name, uniqueness: true
+>>>>>>> b5394fb350ce3648f6ec1cedb7705206ce78d7f3
 end

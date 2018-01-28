@@ -2,6 +2,7 @@ doctype html
 html
   head
     title
+<<<<<<< HEAD
       | Blog Hello World
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
@@ -14,3 +15,15 @@ html
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
+=======
+      | Blog
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+  header
+    = render 'shared/header'
+  body
+    = yield 
+  footer
+    = render 'shared/footer'
+>>>>>>> b5394fb350ce3648f6ec1cedb7705206ce78d7f3

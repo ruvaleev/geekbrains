@@ -11,10 +11,13 @@ p {
 a {
 	font-family: arial;
 }
+<<<<<<< HEAD
 
 .logo {
 	width: 50%;
 }
+=======
+>>>>>>> b5394fb350ce3648f6ec1cedb7705206ce78d7f3
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
