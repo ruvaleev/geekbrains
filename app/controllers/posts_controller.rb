@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @comments = Post.includes(:comments).page(params[:page]).per(2)
+    @comments = @post.comments.page(params[:page]).per(2)
   end
 
   # GET /posts/new

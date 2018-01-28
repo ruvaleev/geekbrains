@@ -1,3 +1,20 @@
+h1 {
+	font-family: arial;
+	color: red;
+}
+
+p {
+	font-family: arial;
+	color: grey;
+}
+
+a {
+	font-family: arial;
+}
+
+.logo {
+	width: 50%;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

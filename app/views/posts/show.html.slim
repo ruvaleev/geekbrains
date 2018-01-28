@@ -14,7 +14,7 @@ p
   = @post.disactive
 
 table
-  - @post.comments.order(created_at: :desc).each do |comment|
+  - @comments.order(created_at: :desc).each do |comment|
     tr
       td
         b = comment.user.name

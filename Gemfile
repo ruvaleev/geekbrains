@@ -23,6 +23,7 @@ gem 'webpacker'
 
 gem 'slim-rails'
 gem 'kaminari'
+gem 'devise'
 
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
