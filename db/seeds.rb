@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Comment.destroy_all
 Post.destroy_all
 User.destroy_all
@@ -37,7 +36,7 @@ hash_comments = 200.times.map do
   }
 end
 Comment.create! hash_comments
-=======
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -45,4 +44,3 @@ Comment.create! hash_comments
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
->>>>>>> b5394fb350ce3648f6ec1cedb7705206ce78d7f3

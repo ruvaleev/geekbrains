@@ -10,11 +10,5 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-<<<<<<< HEAD
-
-//= require jquery3
-//= require xray
-=======
->>>>>>> b5394fb350ce3648f6ec1cedb7705206ce78d7f3
 //= require rails-ujs
 //= require_tree .
